@@ -27,6 +27,8 @@ gem 'bootstrap', '~> 5.1.3'
 
 gem 'cancancan'
 
+gem 'devise'
+
 gem 'jwt'
 
 gem 'rswag'
