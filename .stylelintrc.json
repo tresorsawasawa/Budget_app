@@ -10,7 +10,9 @@
           "apply",
           "variants",
           "responsive",
-          "screen"
+          "screen",
+          "mixin",
+          "include"
         ]
       }
     ],
@@ -22,7 +24,9 @@
           "apply",
           "variants",
           "responsive",
-          "screen"
+          "screen",
+          "mixin",
+          "include"
         ]
       }
     ],
