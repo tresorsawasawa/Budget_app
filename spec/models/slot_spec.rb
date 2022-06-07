@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Slot, type: :model do
-  before (:each) do
+  before(:each) do
     @tresor = User.create(name: 'Tresor', email: 'tresor@test.com', password: 'password')
     expect(@tresor).to be_valid
     @clothes_category = Category.create(name: 'Clothes', icon: 'C', user_id: @tresor.id)

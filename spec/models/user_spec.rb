@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  before (:each) do
+  before(:each) do
     @tresor = User.create(name: 'Tresor', email: 'tresor@test.com', password: 'password')
   end
 
