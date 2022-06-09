@@ -1,9 +1,8 @@
+<header class="header">
+  <h2 class="category_form_heading">Create New Category</h2>
+  <% button_to "Sign out", destroy_user_session_path, method: :delete %>
+</header>
+
 <div class="new_category">
-  <h2 class="category_form_heading">New Category</h2>
-  
   <%= render "form", category: @category %>
-  
-  <div>
-    <%= link_to "Back", categories_path %>
-  </div>
 </div>
