@@ -1,7 +1,9 @@
-<section class="p-5 flex flex-col h-screen">
-  <div class="grow flex justify-center items-center">
-    <h1 class="dark-grey text-4xl">Budget App</h1>
+<section class="home">
+  <div class="heading">
+    <h1 class="title">Budget App</h1>
   </div>
-  <div class="blue flex justify-center py-8 text-white hover:bg-blue-900"><%= link_to 'LOG IN', new_user_session_path %></div>
-  <div class="flex justify-center py-8 grey hover:bg-slate-400 hover:text-white"><%= link_to 'SIGN UP', new_user_registration_path %></div>
+  <div class="buttons">
+    <%= link_to 'LOG IN', new_user_session_path, class: "login bg_col_blue text_white" %>
+    <%= link_to 'SIGN UP', new_user_registration_path, class: "sign_up text_white" %>
+  </div>
 </section>

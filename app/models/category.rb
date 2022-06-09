@@ -5,7 +5,7 @@ class Category < ApplicationRecord
 
   validates_presence_of :user
   validates :name, presence: true, length: { maximum: 30 }
-  validates :icon, presence: true, length: { maximum: 20 }
+  validates :icon, presence: true
 
   def total_amount
     total = 0
