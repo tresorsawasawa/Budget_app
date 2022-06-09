@@ -16,9 +16,9 @@ class CategoriesController < ApplicationController
   
   def create
     @category = Category.new(category_params)
-    @category.author = current_user
+    @category.user = current_user
 
-    respond_to do
+    respond_to do |format|
       if @category.save
         format.html { redirect_to category_path(@category), notice: 'Category was successfully created.' }
         format.json { render :show, status: :created, location: @category }
@@ -45,7 +45,7 @@ class CategoriesController < ApplicationController
     @category.destroy
 
     respond_to do |format|
-      format.html { redirect_to categories_url, 'Category was successfully deleted.' }
+      format.html { redirect_to categories_url, notice: 'Category was successfully deleted.' }
       format.json { head :no_content }
     end
   end
