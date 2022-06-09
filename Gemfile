@@ -23,7 +23,7 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 # Use Sass for styling
 # gem 'sass-rails'
 
-gem 'bootstrap', '~> 5.1.3'
+# gem 'bootstrap', '~> 5.1.3'
 
 gem 'cancancan'
 
