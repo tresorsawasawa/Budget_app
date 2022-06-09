@@ -1,8 +1,13 @@
 <section class="exchanges-section">
-  <h1>Exchanges</h1>
-  <div class="exchanges-content">
-    <%= @exchanges.each do |exchange| %>
-      <% render exchange%>
+  <h2>All Transactions of this category</h2>
+  <div class="exchanges">
+    <% if @exchanges.length == 0 %>
+      <p class="text-info">No transaction yet. Add a new one!!!</p>
+    <% else %>
+      <% @exchanges.each do |exchange| %>
+        <%= render exchange %>
+      <% end %>
     <% end %>
   </div>
+  <%# link_to "New Transaction", new_category_exchanges_path %>
 </section>

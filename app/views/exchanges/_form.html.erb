@@ -1,0 +1,15 @@
+<%= form_with(model: exchange) do |form| %>
+  <div>
+    <%= form.label :name %> <br> 
+    <%= form.text_field :name, placeholder: "Enter the transaction's name" %>
+  </div>
+
+  <div>
+    <%= form.label :amount %> <br>
+    <%= form.number_field :amount, min: 0, placeholder: "Enter the transaction's amount" %>
+  </div>
+
+  <div>
+    <%= form.submit 'Add New Transaction' %>
+  </div>
+<% end %>
