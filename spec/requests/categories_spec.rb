@@ -33,7 +33,7 @@ RSpec.describe 'Categories', type: :request do
     end
 
     it 'should have some html' do
-      expect(response.body).to include '<h2 class="category_form_heading">Create New Category</h2>'
+      expect(response.body).to include '<span class="back">&#8701;</span>'
     end
   end
 
