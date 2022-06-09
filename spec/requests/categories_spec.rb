@@ -33,7 +33,7 @@ RSpec.describe 'Categories', type: :request do
     end
 
     it 'should have some html' do
-      expect(response.body).to include '<h2 class="category_form_heading">New Category</h2>'
+      expect(response.body).to include '<h2 class="category_form_heading">Create New Category</h2>'
     end
   end
 
@@ -58,47 +58,6 @@ RSpec.describe 'Categories', type: :request do
     end
     it 'should be invalid' do
       expect(@category).not_to be_valid
-    end
-  end
-
-  describe 'GET /edit' do
-    before(:each) do
-      @category = Category.create(name: 'Clothes', icon: 'C', user_id: @tresor.id)
-    end
-
-    it 'renders a successful response' do
-      get edit_category_url(@category)
-      expect(response).to be_successful
-    end
-  end
-
-  describe 'DELETE /destroy' do
-    it 'destroys the requested category' do
-      @category = Category.create(name: 'Clothes', icon: 'C', user_id: @tresor.id)
-      expect do
-        delete category_url(@category)
-      end.to change(Category, :count).by(-1)
-    end
-
-    it 'redirects to the categories list' do
-      @category = Category.create(name: 'Clothes', icon: 'C', user_id: @tresor.id)
-      delete category_url(@category)
-      expect(response).to redirect_to(categories_url)
-    end
-  end
-
-  describe 'PATCH /update' do
-    context 'with valid parameters' do
-      let(:new_attributes) do
-        { name: 'Clothes', icon: 'C' }
-      end
-
-      it 'redirects to the category' do
-        @category = Category.create(name: 'Clothes',  icon: 'C', user_id: @tresor.id)
-        patch category_url(@category), params: { category: new_attributes }
-        @category.reload
-        expect(response).to redirect_to(category_url(@category))
-      end
     end
   end
 end
