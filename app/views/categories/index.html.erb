@@ -1,10 +1,10 @@
-<header class="header">
-  <h2>All Categories</h2>
-  <% button_to "Sign out", destroy_user_session_path, method: :delete %>
-</header>
+
 
 <section class="categories-section">
-  <p class="notice text-success"><%= notice %></p>
+  <div class="header">
+    <h2>All Categories</h2>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+  </div>
   <div class="categories">
     <% if @categories.length == 0 %>
       <p class="text-info">No category yet. Add a new one!!!</p>
