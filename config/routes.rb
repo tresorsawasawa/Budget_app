@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#home"
-  resources :exchanges
-  resources :categories
+
+  resources :categories, only: [:index, :new, :create, :destroy] do
+    resources :exchanges, only: [:index, :new, :create, :destroy]
+  end
 end
