@@ -1,0 +1,35 @@
+@import './mixins';
+@import './variables';
+
+.header {
+  @include flex-between(row);
+
+  background-color: $blue_color;
+  padding: 25px 10px 15px;
+
+  .sign_out {
+    background: none;
+    font-size: 1.1rem;
+
+    &:hover {
+      font-weight: 700;
+      transform: scale(1.05);
+      color: $white_col;
+    }
+  }
+}
+
+.back_btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 2px solid $white_col;
+  padding: 8px;
+  border-radius: 50%;
+
+  &:hover {
+    font-weight: 700;
+    transform: scale(1.05);
+    color: $white_col;
+    border: 3px solid $white_col;
+  }
+}

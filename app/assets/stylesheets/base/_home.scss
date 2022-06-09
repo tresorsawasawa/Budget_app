@@ -1,0 +1,48 @@
+@import './variables';
+@import './mixins';
+
+.home {
+  @include flex-center(column);
+
+  height: 100vh;
+
+  .heading {
+    .title {
+      padding: 0 0 200px 0;
+      font-family: $dancing_script_font;
+      font-weight: 900;
+      color: $prim_gray_col;
+    }
+  }
+
+  .buttons {
+    @include flex-center(column);
+
+    width: 95%;
+
+    .sign_up,
+    .login {
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .login {
+      &:hover {
+        color: $white_col;
+        background-color: $dark_blue_color;
+      }
+    }
+
+    .sign_up {
+      color: $prim_gray_col;
+      margin-top: 1rem;
+
+      &:hover {
+        color: $white_col;
+        background-color: $fourth_gray_col;
+      }
+    }
+  }
+}
