@@ -9,14 +9,10 @@ class ExchangesController < ApplicationController
     redirect_to new_user_session_path, notice: 'Can not access this ressource' if @category.user != current_user
   end
 
-  # def show; end
-
   def new
     @category = Category.find(params[:category_id])
     @exchange = Exchange.new
   end
-
-  # def edit; end
 
   def create
     @exchange = Exchange.new(exchange_params)
@@ -34,27 +30,6 @@ class ExchangesController < ApplicationController
       end
     end
   end
-
-  # def update
-  #   respond_to do |format|
-  #     if @exchange.update(exchange_params)
-  #       format.html { redirect_to exchange_path(@exchange), notice: 'Transaction was successfully updated.' }
-  #       format.json { render :show, status: :ok, location: @exchange }
-  #     else
-  #       format.html { render :edit, status: :unprocessable_entity }
-  #       format.json { render json: @exchange.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
-
-  # def destroy
-  #   @exchange.destroy
-
-  #   respond_to do |format|
-  #     format.html { redirect_to exchanges_url, notice: 'Exchange was successfully deleted.' }
-  #     format.json { head :no_content }
-  #   end
-  # end
 
   private
 

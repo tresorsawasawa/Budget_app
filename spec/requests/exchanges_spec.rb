@@ -9,7 +9,7 @@ RSpec.describe 'Exchanges', type: :request do
     @cat1 = Category.create(name: 'Category_1', icon: 'icon_1', user_id: @tresor.id)
     @ex1 = Exchange.create(name: 'C&A', amount: 29.99, author_id: @tresor.id)
   end
-  
+
   describe 'GET /index' do
     it 'renders a successful response' do
       @cat1.exchanges << @ex1
