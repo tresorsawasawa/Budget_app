@@ -1,0 +1,15 @@
+<%= form_with(model: category) do |form| %>
+  <div>
+    <%= form.label :name %> <br>
+    <%= form.text_field :name, placeholder: "Enter Category's Name" %>
+  </div>
+
+  <div>
+    <%= form.label :icon %> <br>
+    <%= form.text_field :icon, placeholder: "Enter Category's Icon" %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<section class="categories-section">
+  <h2>All Categories</h2>
+  <div class="categories">
+    <% if @categories.length == 0 %>
+      <p class="text-info">No category yet. Add a new one!!!</p>
+    <% else %>
+      <% @categories.each do |category| %>
+        <%= render category %>
+        <span><%= link_to "About Category", category %></span>
+      <% end %>
+    <% end %>
+    </div>
+   <%= link_to "New Category", new_category_path %>
+</section>
