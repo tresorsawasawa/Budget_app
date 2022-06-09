@@ -1,0 +1,23 @@
+<section class="exchanges-section">
+  <div class="header">
+    <div class="justify-self-start"><%= link_to "<", categories_path %></div>
+    <h2>All Transactions for <span><%= @category.name %></span></h2>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+  </div>
+
+  <div class="bg-white flex justify-center py-2 text-black ">TOTAL : <%=@category.total_amount%>$ </div>
+  
+  <div class="exchanges">
+    <% if @exchanges.length == 0 %>
+      <p class="text-info">No transaction yet. Add a new one!!!</p>
+    <% else %>
+      <% @exchanges.each do |exchange| %>
+        <%= render exchange %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div>
+    <%= link_to "New Transaction", new_category_exchange_path(@category) %>
+  </div>
+</section>

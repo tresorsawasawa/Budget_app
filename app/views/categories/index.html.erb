@@ -1,0 +1,22 @@
+
+
+<section class="categories-section">
+  <div class="header">
+    <h2>All Categories</h2>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+  </div>
+  <div class="categories">
+    <% if @categories.length == 0 %>
+      <p class="text-info">No category yet. Add a new one!!!</p>
+    <% else %>
+      <% @categories.each do |category| %>
+        <%= link_to category_exchanges_path category do %>
+          <%= render category %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="new_category_btn">
+    <%= link_to "Add Category", new_category_path %>
+  </div>
+</section>
