@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'categories/index', type: :feature do
   before(:each) do
     @tresor = User.create(name: 'Tresor', email: 'test@email.com',
-                        password: 'password', created_at: Time.now, updated_at: Time.now)
+                          password: 'password', created_at: Time.now, updated_at: Time.now)
     @tresor.confirm
 
     @cat1 = Category.create(name: 'Category_1', icon: 'https://cdn-icons-png.flaticon.com/512/6969/6969002.png',
@@ -20,7 +20,6 @@ RSpec.describe 'categories/index', type: :feature do
     fill_in 'Password', with: 'password'
     click_button 'Log in'
   end
-
 
   after(:each) do
     User.destroy_all

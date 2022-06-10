@@ -46,10 +46,10 @@ RSpec.describe 'login page', type: :feature do
   end
 
   context 'Testing home page content text' do
-      it 'I can see the title of the page and the sign in link.' do
-        visit root_path
-        expect(page).to have_content 'SawaTransfer'
-        expect(page).to have_content 'LOG IN'
+    it 'I can see the title of the page and the sign in link.' do
+      visit root_path
+      expect(page).to have_content 'SawaTransfer'
+      expect(page).to have_content 'LOG IN'
     end
 
     it 'I can not access this pages if user is connected' do
@@ -57,7 +57,7 @@ RSpec.describe 'login page', type: :feature do
       fill_in 'user_email',	with: 'test@email.com'
       fill_in 'user_password',	with: 'password'
       click_button 'Log in'
-  
+
       expect(page).to_not have_content 'SawaTransfer'
       expect(page).to have_content 'CATEGORIES'
     end

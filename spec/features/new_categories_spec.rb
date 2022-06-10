@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'new category page', type: :feature do
   before(:each) do
     @tresor = User.create(name: 'Tresor', email: 'test@email.com',
-                        password: 'password', created_at: Time.now, updated_at: Time.now)
+                          password: 'password', created_at: Time.now, updated_at: Time.now)
     @tresor.confirm
   end
 
