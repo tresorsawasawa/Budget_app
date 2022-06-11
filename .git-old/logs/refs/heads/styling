@@ -1,8 +1,0 @@
-0000000000000000000000000000000000000000 05fa42d86f743322ff287004cc59bbc791fa6292 tresorsawasawa <tresorsawasawa@gmail.com> 1654765259 +0200	branch: Created from HEAD
-05fa42d86f743322ff287004cc59bbc791fa6292 9f3cd5064833e0307ec3d33da32dab5944d79a23 tresorsawasawa <tresorsawasawa@gmail.com> 1654812416 +0200	commit: Add some classes to allow the styling
-9f3cd5064833e0307ec3d33da32dab5944d79a23 c83d7fce13b2fefef35c9266b5307138e2e4788f tresorsawasawa <tresorsawasawa@gmail.com> 1654812564 +0200	commit: Add styling on all the aplication's pages
-c83d7fce13b2fefef35c9266b5307138e2e4788f 4d8bd7f88862e2844b524184a49c5b9677e97bac tresorsawasawa <tresorsawasawa@gmail.com> 1654814271 +0200	commit: Fix a bug
-4d8bd7f88862e2844b524184a49c5b9677e97bac 47586dc41473059204b1ec72c4ae9c58ca3eab2b tresorsawasawa <tresorsawasawa@gmail.com> 1654814550 +0200	commit: Config gem in Gemfile
-47586dc41473059204b1ec72c4ae9c58ca3eab2b ade17fbb45c4a9ff2db60cad2bfb7b71e123162b tresorsawasawa <tresorsawasawa@gmail.com> 1654815109 +0200	commit: Setup stylelint reconfig
-ade17fbb45c4a9ff2db60cad2bfb7b71e123162b 027639880355db3ba7e34d9156b3fd291dfc20bd tresorsawasawa <tresorsawasawa@gmail.com> 1654815420 +0200	commit: Fix linters errors
-027639880355db3ba7e34d9156b3fd291dfc20bd 13885ad6539fe25db9617f50fe84c482bf06cdb8 tresorsawasawa <tresorsawasawa@gmail.com> 1654815975 +0200	commit: Reconfig stylintrc

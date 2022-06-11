@@ -1,7 +1,0 @@
-0000000000000000000000000000000000000000 723c871b868a5a558ef15cafde9387f0143b29cb tresorsawasawa <tresorsawasawa@gmail.com> 1654816146 +0200	branch: Created from HEAD
-723c871b868a5a558ef15cafde9387f0143b29cb 61b7efa1b743dbed9d0dd142daff99e03db099f0 tresorsawasawa <tresorsawasawa@gmail.com> 1654816437 +0200	commit: Remove unused code lines
-61b7efa1b743dbed9d0dd142daff99e03db099f0 cc2f35463a4d1e0995624c54b1f1e79d87c4068b tresorsawasawa <tresorsawasawa@gmail.com> 1654818028 +0200	commit: Test the login process
-cc2f35463a4d1e0995624c54b1f1e79d87c4068b 79705b925c8390aa827a655360c8dbd8b8561cd3 tresorsawasawa <tresorsawasawa@gmail.com> 1654818152 +0200	commit (amend): Test the home paage: login process
-79705b925c8390aa827a655360c8dbd8b8561cd3 f8d79dff2155bb14c35eff61778b34fde2cf3ba8 tresorsawasawa <tresorsawasawa@gmail.com> 1654818202 +0200	commit (amend): Test the home paage: login process
-f8d79dff2155bb14c35eff61778b34fde2cf3ba8 861784e9fc29cb571f1cfacf595abd6f75f1f3a6 tresorsawasawa <tresorsawasawa@gmail.com> 1654865455 +0200	commit: Add units testing on views
-861784e9fc29cb571f1cfacf595abd6f75f1f3a6 428b02652b4119d4a4a2fbc2a03285fb7413b874 tresorsawasawa <tresorsawasawa@gmail.com> 1654866761 +0200	commit: Fix linters errors
