@@ -1,0 +1,32 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/tresorsawasawa/Budget_app.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "develop"]
+	remote = origin
+	merge = refs/heads/develop
+[branch "setup_rails_project"]
+	remote = origin
+	merge = refs/heads/setup_rails_project
+[branch "setup_linters"]
+	remote = origin
+	merge = refs/heads/setup_linters
+[branch "feature/models"]
+	remote = origin
+	merge = refs/heads/Budget_app
+[branch "add_controller"]
+	remote = origin
+	merge = refs/heads/add_controller
+[branch "styling"]
+	remote = origin
+	merge = refs/heads/styling
+[branch "views_testing"]
+	remote = origin
+	merge = refs/heads/views_testing
