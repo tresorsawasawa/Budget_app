@@ -35,7 +35,7 @@ RSpec.describe 'exchanges/index', type: :feature do
   it 'I can see all exchange for a categorie' do
     visit categories_path
 
-    expect(page).to_not have_content 'SawaTransfer'
+    expect(page).to_not have_content 'SawasawaTransfer'
     expect(page).to have_content 'CATEGORIES'
 
     visit category_exchanges_path @cat1

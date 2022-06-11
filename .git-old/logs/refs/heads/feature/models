@@ -1,0 +1,21 @@
+0000000000000000000000000000000000000000 204d8282983ac593b97c3159fcea5f645b14f1a7 tresorsawasawa <tresorsawasawa@gmail.com> 1654518447 +0200	branch: Created from HEAD
+204d8282983ac593b97c3159fcea5f645b14f1a7 e1d7a09d867d5af7006678a790e305d2f06f4096 tresorsawasawa <tresorsawasawa@gmail.com> 1654519733 +0200	commit (amend): Merge pull request #2 from tresorsawasawa/setup_linters
+e1d7a09d867d5af7006678a790e305d2f06f4096 086e163ca50a173532f114f8cfcf515f6371cf7a tresorsawasawa <tresorsawasawa@gmail.com> 1654519769 +0200	commit (amend): Add the User model
+086e163ca50a173532f114f8cfcf515f6371cf7a 5db7a6f09c1c2aeca96b698d2ceb84b774c7ce7d tresorsawasawa <tresorsawasawa@gmail.com> 1654519943 +0200	commit: Add the Category model
+5db7a6f09c1c2aeca96b698d2ceb84b774c7ce7d 34311555c8b1e3bbaf1401436fa1ad3f64095ce4 tresorsawasawa <tresorsawasawa@gmail.com> 1654520403 +0200	commit: Add the Category model
+34311555c8b1e3bbaf1401436fa1ad3f64095ce4 0fb63d7f62911d472d16999230968bb5896a0277 tresorsawasawa <tresorsawasawa@gmail.com> 1654521990 +0200	commit: Add the Category and Slot models
+0fb63d7f62911d472d16999230968bb5896a0277 5c60595dfcf42f2c724a9e23f03f7ad76c62090b tresorsawasawa <tresorsawasawa@gmail.com> 1654523208 +0200	commit: Add foreigner keys on tables: exchanges and
+5c60595dfcf42f2c724a9e23f03f7ad76c62090b f2f2faf5c7f7b904cc14daea12e3240b10703f4e tresorsawasawa <tresorsawasawa@gmail.com> 1654524630 +0200	commit: Add validations and generate the schema
+f2f2faf5c7f7b904cc14daea12e3240b10703f4e 20695d30d9252c76ecf44782e1fffe908d9498e5 tresorsawasawa <tresorsawasawa@gmail.com> 1654525126 +0200	commit: Add some gems needed in the project
+20695d30d9252c76ecf44782e1fffe908d9498e5 d0fc73f94be4ce619c51c4b901e467d00889ea59 tresorsawasawa <tresorsawasawa@gmail.com> 1654525707 +0200	commit: Setup rspec config
+d0fc73f94be4ce619c51c4b901e467d00889ea59 fc2f16bee5a52c7fbd378e1dd9fd4575b5a99399 tresorsawasawa <tresorsawasawa@gmail.com> 1654525995 +0200	commit (amend): Setup rspec config and devise gem
+fc2f16bee5a52c7fbd378e1dd9fd4575b5a99399 88a133e1dd890b749558bf539cf5016e6b77f238 tresorsawasawa <tresorsawasawa@gmail.com> 1654529160 +0200	commit: Install devise
+88a133e1dd890b749558bf539cf5016e6b77f238 a6e065f962d3740510e3c9f50d424c92bceea46c tresorsawasawa <tresorsawasawa@gmail.com> 1654529704 +0200	commit: Add confirmable to the schema
+a6e065f962d3740510e3c9f50d424c92bceea46c 5601ab65a97159587a882695113eb035a9da5f2e tresorsawasawa <tresorsawasawa@gmail.com> 1654529932 +0200	commit: Add devise views
+5601ab65a97159587a882695113eb035a9da5f2e 1c6ece2d64958af9a76a5db61d1093c98fc791ae tresorsawasawa <tresorsawasawa@gmail.com> 1654633531 +0200	commit: Add units tests on the Category model
+1c6ece2d64958af9a76a5db61d1093c98fc791ae ea8e1241192fce999877799f6caa58210164e5a8 tresorsawasawa <tresorsawasawa@gmail.com> 1654634914 +0200	commit: Add units tests on the Exchange model
+ea8e1241192fce999877799f6caa58210164e5a8 ea8e1241192fce999877799f6caa58210164e5a8 tresorsawasawa <tresorsawasawa@gmail.com> 1654634963 +0200	Branch: renamed refs/heads/Budget_app to refs/heads/feature/models
+ea8e1241192fce999877799f6caa58210164e5a8 ada73f464b87408999b0fe1941a0f5857a8fe679 tresorsawasawa <tresorsawasawa@gmail.com> 1654636180 +0200	commit: Add units tests on the Slot model
+ada73f464b87408999b0fe1941a0f5857a8fe679 ea59405d362264be76bc539af8512c0c5b4daa46 tresorsawasawa <tresorsawasawa@gmail.com> 1654636869 +0200	commit: Add units tests on the User model
+ea59405d362264be76bc539af8512c0c5b4daa46 9d04b29b5012a26eff89de8af20c54d2bda3293d tresorsawasawa <tresorsawasawa@gmail.com> 1654637253 +0200	commit: Add units tests on the User model
+9d04b29b5012a26eff89de8af20c54d2bda3293d 37f45c42179079007483a1a6c35f2c68e659887f tresorsawasawa <tresorsawasawa@gmail.com> 1654637266 +0200	commit (amend): Correct linters errors
