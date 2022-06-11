@@ -1,0 +1,14 @@
+<div class="header">
+  <div class="justify-self-start">
+    <%= link_to categories_path, class: "back_btn text_white" do %>
+        <span class="back">&#8701;</span>
+    <% end %>
+  </div>
+  <h2 class="category_form_heading text_white text-center">Create New Category</h2>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
+</div>
+
+  <div class="new_category">
+    <%= render "form", category: @category %>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+@import './variables';
+
+@mixin flex-center($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flex-start($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: $direction;
+}
+
+@mixin flex-between($direction) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: $direction;
+}
+
+@mixin flex-evenly($direction) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: $direction;
+}
+
+@mixin buttons {
+  background-color: transparent;
+  border: 1px solid $dark-color;
+  padding: 10px;
+  box-shadow: 3px 3px 3px $dark-color;
+}

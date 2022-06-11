@@ -1,0 +1,85 @@
+@import './variables';
+@import './mixins';
+
+.forms_section {
+  background-color: $white_col;
+  width: 350px;
+  margin: 50px auto;
+  padding: 40px 0;
+
+  form {
+    @include flex-center(column);
+
+    color: $prim_gray_col;
+
+    .actions,
+    .field {
+      width: 95%;
+      margin-bottom: 13px;
+
+      input {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .checkbox_field {
+      align-self: start;
+      margin-bottom: 12px;
+      padding-left: 2.5%;
+
+      input {
+        width: 20px;
+        height: 20px;
+        border: 1px solid $prim_gray_col;
+      }
+
+      label {
+        padding-left: 12px;
+      }
+    }
+
+    .actions {
+      .signup_submit {
+        outline: none;
+        border: none;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.gray_btn {
+  margin-top: 25px;
+  margin-left: 8px;
+  padding: 12px 135px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: $prim_gray_col;
+
+  &:hover {
+    background-color: $fourth_gray_col;
+    color: $white_col;
+  }
+}
+
+.confirmation_instructions {
+  font-size: 1.2rem;
+  padding-left: 8px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.signup_session {
+  padding: 12px 127px;
+}
+
+.new_category_btn {
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  color: $white_col;
+
+  &:hover { color: $white_col; }
+}

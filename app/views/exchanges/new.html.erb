@@ -1,0 +1,14 @@
+<section class="new_transtaction">
+  <div class="header">
+    <div class="justify-self-start">
+      <%= link_to category_exchanges_path(@category), class: "back_btn text_white" do %>
+          <span class="back">&#8701;</span>
+      <% end %>
+    </div>
+    <h2 class="text_white">Create New Transaction</h2>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "sign_out text_white" %>
+  </div>
+  <div class="center">
+    <%= render "form", exchange: @exchange %>
+  </div>
+</section>

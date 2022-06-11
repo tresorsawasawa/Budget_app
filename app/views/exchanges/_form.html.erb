@@ -1,0 +1,29 @@
+<div class="forms_section">
+  <%= form_with(model: exchange, url: category_exchanges_path(@category)) do |form| %>
+    <% if exchange.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(exchange.errors.count, "error") %> prohibited this exchange from being saved:</h2>
+      
+        <ul>
+          <% exchange.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+    <div class="field">
+      <%= form.label :name, class: "label" %> <br> 
+      <%= form.text_field :name, placeholder: "Enter the transaction's name" %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :amount, class: "label" %> <br>
+      <%= form.number_field :amount, min: 0, placeholder: "Enter the transaction's amount" %>
+    </div>
+  
+    <div class="field">
+      <%= form.submit 'Add New Transaction', class: "bg_col_blue new_category_btn" %>
+    </div>
+  <% end %>
+</div>

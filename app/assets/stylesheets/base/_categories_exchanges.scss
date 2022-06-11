@@ -1,0 +1,119 @@
+@import './variables';
+@import './mixins';
+
+.exchanges-section,
+.categories-section {
+  position: relative;
+  height: 100vh;
+
+  .header {
+    @include flex-between(row);
+
+    background-color: $blue_color;
+    padding: 25px 10px 15px;
+
+    .menu {
+      height: 25px;
+      width: 25px;
+
+      .item2,
+      .item3,
+      .item1 {
+        background-color: $white_col;
+        width: 100%;
+        height: 3px;
+      }
+
+      .item2 {
+        margin: 6px 0;
+      }
+    }
+
+    .categ_title {
+      font-weight: 600;
+    }
+
+    .sign_out {
+      background: none;
+      font-size: 1.1rem;
+
+      &:hover {
+        font-weight: 700;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .categories {
+    margin: 50px auto;
+    width: 93%;
+
+    .category {
+      @include flex-between(row);
+
+      position: relative;
+      background-color: $white_col;
+      width: 100%;
+      padding: 43px 20px;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      color: $prim_gray_col;
+
+      img {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        padding-top: -12px;
+        padding-left: -2px;
+      }
+    }
+  }
+
+  .new_category_btn {
+    @include flex-center(column);
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $green_color_btn;
+    padding: 12px;
+
+    .Add_categ_btn {
+      border: 1px solid $white_col;
+      width: 95%;
+      padding: 15px;
+      font-size: 1.7rem;
+
+      &:hover {
+        font-weight: 600;
+        color: $white_col;
+      }
+
+      &:active {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.mt-50 {
+  margin-top: 20px;
+}
+
+.exchanges {
+  margin: 50px auto;
+  width: 93%;
+
+  .exchange {
+    @include flex-between(row);
+
+    position: relative;
+    background-color: $white_col;
+    width: 100%;
+    padding: 43px 20px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: $prim_gray_col;
+  }
+}
