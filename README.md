@@ -1,4 +1,4 @@
-# SawasawaTansfer 💰
+# SawasawaTransfer 💰
 
 ## Description
 
