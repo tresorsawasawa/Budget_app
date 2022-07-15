@@ -1,4 +1,4 @@
-# SawasawaTransfer 💰
+# MyBudget App 💰
 
 ## Description
 
