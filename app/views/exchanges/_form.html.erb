@@ -2,7 +2,7 @@
   <%= form_with(model: exchange, url: category_exchanges_path(@category)) do |form| %>
     <% if exchange.errors.any? %>
       <div style="color: red">
-        <h2><%= pluralize(exchange.errors.count, "error") %> prohibited this exchange from being saved:</h2>
+        <h4 class="red_col"><%= pluralize(exchange.errors.count, "error") %> prohibited this exchange from being saved:</h4>
       
         <ul>
           <% exchange.errors.each do |error| %>
