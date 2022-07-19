@@ -28,19 +28,19 @@ RSpec.describe 'categories/index', type: :feature do
   it 'I can access this page if user is connected' do
     visit categories_path
 
-    expect(page).to_not have_content 'SawasawaTransfer'
+    expect(page).to_not have_content 'My Budget'
     expect(page).to have_content 'CATEGORIES'
   end
 
   it 'I can logout form the catagories page' do
     visit categories_path
 
-    expect(page).to_not have_content 'SawasawaTransfer'
+    expect(page).to_not have_content 'My Budget'
     expect(page).to have_content 'CATEGORIES'
 
     click_button 'Sign out'
 
-    expect(page).to have_content 'SawasawaTransfer'
+    expect(page).to have_content 'My Budget'
     expect(page).to_not have_content 'CATEGORIES'
   end
 end
