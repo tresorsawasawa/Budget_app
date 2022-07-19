@@ -14,7 +14,10 @@ body {
   background-color: $gray_bg_color;
 }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+  color: $text_blue_color !important;
+}
 
 .alert,
 .notice {
@@ -64,6 +67,8 @@ button { border: none; }
   font-size: 1.6rem;
 }
 
+.blue-color { color: $text_blue_color !important; }
+
 .red_col { color: #eb0625; }
 
-.text-center { text-align: center; }
+.text-center { text-align: center !important; }
