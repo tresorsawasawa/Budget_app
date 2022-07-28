@@ -13,7 +13,7 @@
 - RoR
 - Sass
 
-## [Loom Description Video](https://www.loom.com/share/7da3e6ee7f88424b9d09492d582329d5)
+## Live Demo (Not available for now)
 
 ## Getting Started
 
