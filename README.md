@@ -5,7 +5,7 @@
 > The **My Budget app** is a mobile web application which helps users to manage their budget. It has features of listing transactions associated on a category and with the app you can see how much money you spent on that category.
 
 ## Application view
-![Budget_app](./app/assets/images/Documentation/budget_app.gif)
+![Budget_app](./public/Documentation/budget_app.gif)
 
 ## Built With
 
