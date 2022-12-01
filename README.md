@@ -13,7 +13,7 @@
 - RoR
 - Sass
 
-## Live Demo (Not available for now)
+## Live Demo (Not available for now, fixing a bug)
 
 ## Getting Started
 
